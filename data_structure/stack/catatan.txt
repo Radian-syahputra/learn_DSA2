@@ -1,0 +1,41 @@
+*** STRUKTUR DATA STACK ***
+
+* Konsep -> 
+    Stack Mengunakan Konsep LIFO (Last In First Out) yang dimana elemen terakhir yang dimasukkan adalah yang pertama kali dikeluarkan.
+
+* Operasi ->
+    Push: Menambahkan Elemen Baru di tumpukan atas ke dalam stack.
+    Pop: Mengeluarkan elemen di tumpukan atas dari stack.
+    Peek: Melihat elemen teratas tanpa mengeluarkannya.
+    IsEmpty: Memeriksa apakah stack kosong.
+    IsFull: Memeriksa apakah stack penuh.
+
+* Implementasi ->
+    Stack dapat diimplementasikan menggunakan array atau linked list.
+
+* Contoh ->
+
+    # Contoh Implementasi Stack Versi List
+    class Stack :
+        def __init__(self) -> None:
+            self.data : list[int] = []
+    
+        def isEmpty(self) -> bool :
+            if len(self.data) == 0 :
+                return True
+            return False
+    
+        def push(self, item: int) -> None:
+            self.data.append(item)
+    
+        def pop(self) -> int :
+            if self.isEmpty():
+                raise IndexError("pop from empty stack")
+            return self.data.pop()
+    
+        def peek(self) -> int :
+            if self.isEmpty():
+                raise IndexError("peek from empty stack")
+            return self.data[-1]
+    
+        

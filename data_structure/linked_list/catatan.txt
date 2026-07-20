@@ -1,0 +1,32 @@
+Linked List 
+
+=> Model Data Sekuential -> (Bertahap)
+   Yang Saling Berkaitan Atau Berhubungan
+=> Mirip Dengan Aray tetapi Lebih Fleksibel : -> (Ukuran Datanya Bisa Berubah) 
+   Dan Sedikit Kompleks 
+
+
+** Konsep **
+    Analogi: Estafet pesan berbisik — sekumpulan orang yang berjauhan (tidak berjejer rapi seperti Array), di mana setiap orang hanya membawa 2 hal:
+    1. Pesannya sendiri (data)
+    2. Info siapa orang berikutnya yang harus didatangi (pointer/next)
+
+* Istilah Umum *
+    - Node = satu "orang" dalam rantai, berisi data dan next
+    - next = penunjuk ke Node berikutnya (isinya bukan angka biasa, tapi seluruh Node lain, atau None kalau tidak ada lagi)
+    - head = Node pertama, satu-satunya "pintu masuk" untuk menjangkau seluruh rantai
+    - tail = Node terakhir dalam linked list
+    - null = Pointer yang menunjukkan akhir dari linked list
+
+* Struktur Data *
+    - Node: Struktur data dasar yang menyimpan data dan pointer ke node berikutnya.
+    - Linked List: Gabungan dari beberapa node yang terhubung satu sama lain melalui pointer/next.
+    - Head: Node pertama dalam linked list.
+    - Tail: Node terakhir dalam linked list.
+    - Null: Pointer yang menunjukkan akhir dari linked list.
+
+ * Sifat utama *: 
+    Data tidak tersimpan bersebelahan di memori (beda dengan Array). Untuk mencapai node manapun, kamu wajib mulai dari head dan ikuti .next satu per satu — tidak bisa loncat langsung.
+
+
+

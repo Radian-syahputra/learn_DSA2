@@ -1,0 +1,39 @@
+MENGUBAH ELEMENT ATAU VALUE DALAM INDEX TERTENTU
+    nilai: list[int] = [10, 20, 30, 50]
+    nilai[3] = 40
+    return nilai
+
+HASIL => [10, 20, 30, 40]
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+MENAMBAH ELEMENT DALAM LIST YANG DITAMBAHKAN DI AKHIR
+    nilai: list[int] = [10, 20, 30, 50]
+    nilai.append(60)
+    return nilai
+
+HASIL => [10, 20, 30, 50, 60]
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+MENGHAPUS ELEMENT DALAM LIST YANG BERDASARKAN INDEX
+    nilai: list[int] = [10, 20, 30, 50, 60]
+    nilai.pop(2) -> 30 
+    return nilai
+
+HASIL => [10, 20, 50, 60]
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+MENGHAPUS ELEMENT BERDASARKAN NILAI
+    nilai: list[int] = [10, 20, 30, 50, 60]
+    nilai.remove(30)
+    return nilai
+
+HASIL => [10, 20, 50, 60]
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+MENCARI APAKAH NILAI SUATU ADA DI DALAM LIST
+    nilai: list[int] = [10, 20, 30, 50, 60]
+    30 in nilai -> True 

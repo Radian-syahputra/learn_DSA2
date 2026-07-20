@@ -1,0 +1,6 @@
+FUNGSI titk_terendah(daftar_nilai) :
+    terendah = daftar_nilai elemen pertama
+    UNTUK SETIAP nilai DALAM daftar_nilai :
+        jika nilai < terendah :
+            terendah = nilai
+    KEMBALIKAN terendah

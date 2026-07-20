@@ -28,5 +28,19 @@ Linked List
  * Sifat utama *: 
     Data tidak tersimpan bersebelahan di memori (beda dengan Array). Untuk mencapai node manapun, kamu wajib mulai dari head dan ikuti .next satu per satu — tidak bisa loncat langsung.
 
+* Operasi Dasar *
+    - Insertion: Menambahkan node baru ke linked list.
+    - Deletion: Menghapus node dari linked list.
+    - Traversal: Mengunjungi setiap node dalam linked list.
+    - Search: Mencari node dengan nilai tertentu.
+
+* Cara Kerja *
+    Mulai dari head
+     ↓
+    Selama node_sekarang bukan None:
+        lakukan sesuatu dengan node_sekarang
+        pindah: node_sekarang = node_sekarang.next
+     ↓
+    Berhenti saat ketemu None
 
 

@@ -1,0 +1,6 @@
+*** Queue ***
+
+* Operasi Utama *
+    - enqueue: menambahkan elemen ke belakang queue
+    - dequeue: menghapus elemen dari depan queue
+  

@@ -62,8 +62,8 @@ class Undo :
 #     print(f"peek: {riwayat.peek()}")
 
 
-# Contoh Implementasi Stack Versi Linked List
 
+# Contoh Implementasi Stack Versi Linked List
 class Node :
     def __init__(self, data: str) -> None:
         self.data : str = data

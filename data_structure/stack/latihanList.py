@@ -34,3 +34,5 @@ if __name__ == "__main__":
     stack.pop()
     print(f"peek: {stack.peek()}")
     print(f"size: {stack.size()}")
+
+

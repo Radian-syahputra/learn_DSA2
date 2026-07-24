@@ -3,4 +3,16 @@
 * Operasi Utama *
     - enqueue: menambahkan elemen ke belakang queue
     - dequeue: menghapus elemen dari depan queue
-  
+
+
+* Konsep Utama *
+    - FIFO: First In First Out
+    - Elemen pertama yang dimasukkan akan pertama yang dikeluarkan
+
+
+** Visualisasi **
+    Enqueue masuk →  ┌────┐┌────┐┌────┐┌────┐  → Dequeue keluar
+                     │ 60 ││ 90 ││ 75 ││ 80 │
+                     └────┘└────┘└────┘└────┘
+                      rear                front
+

@@ -1,7 +1,14 @@
 *** STRUKTUR DATA STACK ***
 
 * Konsep -> 
-    Stack Mengunakan Konsep LIFO (Last In First Out) yang dimana elemen terakhir yang dimasukkan adalah yang pertama kali dikeluarkan.
+    Stack Mengunakan Konsep LIFO (Last In First Out) yang dimana elemen terakhir yang dimasukkan adalah yang pertama kali dikeluarkan. 
+    seperti tumpukan buku
+
+    Struktur Last In, First Out — cuma bisa diakses dari satu ujung (top). Seperti tumpukan piring: yang terakhir ditaruh, itu yang pertama diambil.
+
+    - push = taruh di atas
+    - pop = ambil & hapus dari atas
+    - peek = lihat atas, tanpa hapus
 
 * Operasi ->
     Push: Menambahkan Elemen Baru di tumpukan atas ke dalam stack.
@@ -10,8 +17,23 @@
     IsEmpty: Memeriksa apakah stack kosong.
     IsFull: Memeriksa apakah stack penuh.
 
-* Implementasi ->
-    Stack dapat diimplementasikan menggunakan array atau linked list.
+* Visualisasi ->
+
+    Top → │ Citra │  ← terakhir masuk, pertama keluar
+          │  Ani  │
+          │ Budi  │  ← pertama masuk, terakhir keluar
+          └───────┘
+
+* Cara Kerja *
+    push:
+    node_baru.next = self.top   ← sambung ke top lama
+    self.top = node_baru          ← pindahkan top
+    
+    pop:
+    node_teratas = self.top
+    self.top = node_teratas.next  ← pindahkan top ke next-nya
+    return node_teratas.data
+    
 
 * Contoh ->
 
@@ -37,5 +59,6 @@
             if self.isEmpty():
                 raise IndexError("peek from empty stack")
             return self.data[-1]
+
     
         

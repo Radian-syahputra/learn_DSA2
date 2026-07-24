@@ -18,6 +18,24 @@ Linked List
     - tail = Node terakhir dalam linked list
     - null = Pointer yang menunjukkan akhir dari linked list
 
+* Visualisasi ->
+    head
+    │
+    ▼
+    ┌──────┐    ┌──────┐    ┌──────┐
+    │  80  │───▶│  75  │───▶│  90  │───▶ None
+    └──────┘    └──────┘    └──────┘
+    Node 1       Node 2       Node 3
+
+* Cara Kerja *
+    Mulai dari head
+    ↓
+    Selama node_sekarang bukan None:
+        lakukan sesuatu
+        node_sekarang = node_sekarang.next
+    ↓
+    Berhenti saat ketemu None
+
 * Struktur Data *
     - Node: Struktur data dasar yang menyimpan data dan pointer ke node berikutnya.
     - Linked List: Gabungan dari beberapa node yang terhubung satu sama lain melalui pointer/next.
